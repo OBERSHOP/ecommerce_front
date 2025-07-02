@@ -2,6 +2,7 @@
 
 import { Header } from '@/components/Header/header';
 import { Navbar } from '@/components/Navbar/navbar';
+import { Footer } from '@/components/Footer/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -42,12 +43,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Rodapé rápido */}
-      <footer className="bg-blue-900 text-white text-sm px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-2">
-        <p>Privacidade segura · Pagamentos seguros · Garantia de entrega</p>
-        <p>⚠️ Tenha cuidado com mensagens falsas dos Correios</p>
-      </footer>
+      {/* Rodapé completo */}
+      <Footer />
     </main>
   );
 }
+
 
