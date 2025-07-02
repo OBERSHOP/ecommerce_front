@@ -1,47 +1,16 @@
 'use client';
 
-// import { useAuthStore } from '@/store/authStore'
+import { Header } from '@/components/Header/header';
+import { Navbar } from '@/components/Navbar/navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function HomePage() {
-  // const { type } = useAuthStore()
 
+export default function HomePage() {
   return (
     <main className="w-full">
-      {/* Banner Superior */}
-      <div className="bg-blue-900 text-white p-4 flex justify-between items-center">
-        <div className="font-bold text-xl tracking-tight">
-          OBER<span className="text-cyan-300">SHOP</span>
-        </div>
-        <input
-          type="text"
-          placeholder="O que você está procurando?"
-          className="w-1/2 p-2 rounded-md text-black"
-        />
-        <div className="flex gap-4 items-center text-sm">
-          <Link href="/login" className="hover:underline">
-            Entrar ou cadastrar-se
-          </Link>
-          <Link href="/cart" className="hover:underline">
-            🛒 Carrinho
-          </Link>
-        </div>
-      </div>
-
-      {/* Navegação */}
-      <nav className="bg-white shadow-sm border-b">
-        <div className="flex gap-6 px-6 py-3 text-sm font-medium text-gray-700">
-          <Link href="#">Compras recorrentes</Link>
-          <Link href="#">Categorias</Link>
-          <Link href="#">Beleza</Link>
-          <Link href="#">Casa</Link>
-          <Link href="#">Limpeza</Link>
-          <Link href="#">Lançamentos</Link>
-          <Link href="#">Pet</Link>
-          <Link href="#">Utilidades</Link>
-        </div>
-      </nav>
+      <Header />
+      <Navbar />
 
       {/* Banner promocional */}
       <section className="bg-white">
@@ -64,7 +33,7 @@ export default function HomePage() {
             </Link>
           </div>
           <Image
-            src="/placeholder-roupas.png" // substitua com a URL real ou use assets
+            src="/placeholder-roupas.png"
             alt="Manta Microfibra"
             width={500}
             height={400}
@@ -81,3 +50,4 @@ export default function HomePage() {
     </main>
   );
 }
+

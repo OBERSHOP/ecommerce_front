@@ -5,6 +5,7 @@
 - axios
 - tanstack query v5
 - js-cookie
+- Lucide
 
 
 
